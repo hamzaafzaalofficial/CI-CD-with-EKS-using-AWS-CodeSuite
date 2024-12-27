@@ -27,7 +27,8 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - echo dckr_pat_6ZPoktY1ps4RuwKAQA3pgfIShNc | docker login --username hamzaafzalofficial --password-stdin
+      ## enter your docker token below 
+      - echo (enter your docker token here) | docker login --username hamzaafzalofficial --password-stdin
       - docker build -t test . 
       - docker tag test:latest 780621109903.dkr.ecr.us-east-1.amazonaws.com/test:latest
 
